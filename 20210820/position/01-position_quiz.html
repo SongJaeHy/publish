@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<style>
+    body{font:12px "굴림", Gulim;}
+    * {margin: 0; padding: 0;}
+    body {width: 550px; height: 500px;}
+    #header { border:2px solid blue; width: 550px;
+            height:99px}
+    #body{border:2px solid rebeccapurple; width:550px;
+            height:299px; position: relative;}
+    #footer{border: 2px solid brown; width:550px;
+            height: 99px;}
+    .sidebar{left:0px; top:0px; width:200px; height: 299px;
+    border: 1px solid plum; position: absolute;}
+    .content{position:absolute; left:200px; top:0px; width:350px; height: 299px;
+    border: 1px solid darkturquoise; }
+</style>
+<meta charser="UTF-8">
+<title></title>
+</head>
+<body>
+    <div id="header">
+        <p>헤더</p>
+    </div>
+    <div id="body">
+        <div class="sidebar">
+            <p>사이드바</p>
+        </div>
+        <div class="content">
+            <p>콘텐츠</p>
+        </div>
+    </div>
+    <div id="footer">
+        <p>푸터</p>
+    </div>
+</body>
+</html>

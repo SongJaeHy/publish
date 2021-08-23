@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<style>
+    body{font:12px "굴림", Gulim;}
+    * {margin: 0; padding: 0;}
+    body {width: 550px;}
+    #header { border:2px dotted blue;
+            height:100px}
+    #body{ border:2px solid pink;
+            height: 300px; }
+    #footer{ clear: both; border:2px dashed purple;
+            height: 100px; }
+    #body > div{display: inline-block;}
+    .contant{float:left; width:100px; 
+        height:300px; border:1px solid gray;
+        display: inline}
+    .con{float: left; width: 340px; border: 1px solid blue; height: 300px;}
+    .pa{float: right; border:1px solid gray; 
+    width:100px; height: 300px; display: inline;}
+</style>
+<meta charser="UTF-8">
+<title></title>
+</head>
+<body>
+    <div id="header">
+        헤더가 들어갈 자리입니다.
+    </div>
+    <div id="body">
+        <div class="contant">사이드</div>
+            <div class="con">컨텐츠</div>
+                <div class="pa">오른쪽사이드</div>
+    </div>
+    <div id ="footer">
+        푸터가 들어갈 자리입니다.
+    </div>
+</body>
+</html>
