@@ -6,7 +6,7 @@
 </style>
 <script>
     var num = 0; // 그림 번호
-    
+
     function nextPic(){
         num++; // 다음 그림 번호로 이동
         if(num > 2){ // 마지막 그림번호 초과시
@@ -52,5 +52,8 @@
     <img width = "300px" src="images/img0.jpg" id="pic">
 
     <a href="#" onclick="return nextPic()">>></a>
+<script>
+    console.log(document.getElementById("pic"));
+</script>
 </body>
 </html>
