@@ -18,33 +18,60 @@
     window.onload = function(){
         // dom요소 생성(적용은 아직 안됨)
         var newPTag = document.createElement("p");
-        console.log(newPTag);
+        var newulTag = document.createElement("ul");
+        
         var newBtn1 = document.createElement("button");
         var newBtn2 = document.createElement("button");
+        var newli1 = document.createElement("li");
+        var newli2 = document.createElement("li");
+        var newli3 = document.createElement("li");
 
         // 태그 내부에 들어갈 문자는, createTextNode로
         // 만든 다음 조립해주는 형식으로 진행합니다.
         var text1 = document.createTextNode("버튼1");
         var text2 = document.createTextNode("버튼2");
 
+        var text3 = document.createTextNode("childnode");
+        var text4 = document.createTextNode("Children");
+        var text5 = document.createTextNode("parentnode");
         // 속성 생성하기
         // id, class 등을 부여합니다.
         // 요소명.setAttribute("속성명", "부여할 값");
         newBtn1.setAttribute("id", "btn1");
         newBtn2.setAttribute("id", "btn2");
         
+        newli1.setAttribute("id","li1");
+        newli2.setAttribute("id","li2");
+        newli3.setAttribute("id", "li3");
         // 문서 조립하기
         // p태그의 자식으로 버튼1, 2를 넣어주고.
         // 버튼1, 2의 자식으로 text1, 2를 넣어줍니다.
         newBtn1.appendChild(text1);
         newBtn2.appendChild(text2);
+    
+        newli1.appendChild(text3);
+        newli2.appendChild(text4);
+        newli3.appendChild(text5);
+        
+        // 조립완료된 버튼들은 p태그에 끼워넣어줍니다.
+        newPTag.appendChild(newBtn1);
+        newPTag.appendChild(newBtn2);
         console.log(newBtn1);
         console.log(newBtn2);
+        console.log(newPTag);
 
-        // 조립완료된 버튼들은 p태그에 끼워넣어줍니다.
-       newPTag.appendChild(newBtn1);
-       newPTag.appendChild(newBtn2);
-       
+        // body태그에 ptag를 끼워넣어주세요.
+        // 1. body태그를 얻어옵니다.
+        var bodyTag = document.getElementsByTagName("body")[0];
+        console.log(bodyTag);
+        // 2. 조립완료된 ptag를 끼워넣습니다.
+        bodyTag.appendChild(newPTag);
+        console.log(newPTag);
+
+        newulTag.appendChild(newli1);
+        newulTag.appendChild(newli2);
+        newulTag.appendChild(newli3);
+        console.log(newulTag);
     }
 </script>
 <meta charser="UTF-8">

@@ -62,7 +62,7 @@
         // 호출하면 됩니다
         console.log(resetBtn.previousElementSibling);
         console.log(resetBtn.nextElementSibling);
-
+        
 
         // 이제 이벤트를 자바스크립트로 붙여서, 
         // 버튼 클릭시 숫자가 변하도록 해 보겠습니다.
@@ -72,7 +72,8 @@
         var resBtn = document.getElementById("reset");
         var incBtn = document.getElementById("increase");
         var decBtn = document.getElementById("decrease");
-
+        var mulBtn = document.getElementById("multiply");
+        var divBtn = document.getElementById("division"); 
         // increase버튼 클릭시 숫자가 증가하게 만드는 코드
         incBtn.onclick = function(){
             // #number 태그 내부 숫자를 얻어와 10진수로
@@ -94,12 +95,26 @@
 
             numBtn.innerText = current - 1;
         }
+        mulBtn.onclick = function(){
+            var current = parseInt(numBtn.innerText, 10);
+
+            numBtn.innerText = current * 2;
+        }
+        divBtn.onclick = function(){
+            var current = parseInt(numBtn.innerText, 10);
+
+            numBtn.innerText = current / 2;
+        }
        // 각 색깔버튼 클릭시
        // #number의 글씨색이 바뀌도록 이벤트를 걸어보세요.
        var redBtn = document.getElementById("red");
        var blueBtn = document.getElementById("blue");
        var blackBtn = document.getElementById("black");
-       
+       var yellowBtn = document.getElementById("yellow");
+       var purpleBtn = document.getElementById("purple");
+       var orangeBtn = document.getElementById("orange");
+       var greenBtn = document.getElementById("green");
+       var indigoBtn = document.getElementById("indigo");
        redBtn.onclick = function(){
            numBtn.style.color = "red";
        }
@@ -109,7 +124,22 @@
        blackBtn.onclick = function(){
            numBtn.style.color = "black";
        }
-    }
+       yellowBtn.onclick = function(){
+           numBtn.style.color = "yellow";
+       }
+       purpleBtn.onclick = function(){
+           numBtn.style.color = "purple";
+       }
+       orangeBtn.onclick = function(){
+           numBtn.style.color = "orange";
+       }
+       greenBtn.onclick = function(){
+           numBtn.style.color = "green";
+       }
+       indigoBtn.onclick = function(){
+           numBtn.style.color = "indigo";
+       }
+}
 
 </script>
 <meta charser="UTF-8">
@@ -122,8 +152,18 @@
         <button id ="reset">0</button>
         <button id="decrease">-1</button>
         <br>
+        <button id ="multiply">*1</button>
+        <button id="division">/1</button>
+        <br>
         <button id="red">빨간색</button>
+        <button id="orange">주황색</button>
+        <button id="yellow">노란색</button>
+        <br>
+        <button id="green">초록색</button>
         <button id="blue">파란색</button>
+        <button id="indigo">남색</button>
+        <br>
+        <button id="purple">보라색</button>
         <button id="black">검정색</button>
     </div>
 </body>
