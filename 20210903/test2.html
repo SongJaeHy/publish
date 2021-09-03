@@ -4,23 +4,31 @@
 <style>
     body{font:12px "굴림", Gulim; width: 550px;}
   #body{ border:2px solid pink;
-            height: 300px; }
+            height: 400px; }
     *{
         margin: 0; padding: 0;
     }
+    h2 {
+        background-color: royalblue;
+    }
+    .con > p {
+        background-color:aquamarine;
+    }
     #footer{ clear: both; border:2px solid purple; background-color: green;
-            color: white;
+            color: white; text-align: center;
             height: 100px; }
     #header{border: 2px solid pink; height: 100px;
-    background-color: blueviolet;}
+    background-color: orange; text-align: center;
+    }
     #body > div{display: inline-block;}
     .contant{float:left; width:100px; 
-        height:300px; border:1px solid gray;
-        text-align: center; background-color: gray; line-height: 30px;
+        height:400px; border:1px solid gray;
+        text-align: center; line-height: 30px;
         display: inline}
-    .con{float: left; width: 340px; border: 1px solid blue; height: 300px;}
+    .con{float: left; width: 340px; border: 1px solid blue; height: 400px;}
     .pa{float: center; border:1px solid gray; 
-    width:100px; height: 300px; display: inline;}
+    width:100px; height: 400px; display: inline;}
+    a{line-height: 20px;}
 </style>
 <script>
 </script>
@@ -28,12 +36,11 @@
 <title></title>
 </head>
 <body>
-   
         <div id="header">
-            헤더
+            <h1>우리나라 화가 소개</h1>
         </div>
         <div id="body">
-            <div class="contant">사이드
+            <div class="contant">
                 <ul>
                     <a href="#">그림의 작가</a><br>
                     <a href="#">그림의 시대</a><br>
@@ -42,11 +49,52 @@
                     <a href="#">그림의 활용</a>
                 </ul>
             </div>
-            <div class="con">가운데</div>
-            <div class="pa">오른쪽</div>
+            <div class="con">
+            <h2>이중섭</h2>
+            <p>
+                이중섭은 일제 강점기, 대한민국의 서양화가로 호는 대향입니다.
+                이중섭의 작품에는 소, 닭,어린이 등이 가장 많이 등장하는데
+                동화적이고 자전적인 요소가 주로 담겨져 있습니다.
+            </p>
+            <h2>신윤복</h2>
+            <p>
+                신윤복은 조선 후기의 관료이자 화가로서, 산수화와 풍속화를
+                그렸습니다. 양반 관료들의 이중성과 위선을 풍자한 그림, 여성
+                들의 생활상을 그린 그림을 남기기도 했습니다. 대표작은 미인도이다.
+            </p>
+            <h2>김홍도</h2>
+            <p>
+                김홍도는 조선 후기 화가이다. 본관은 김해이다 정조 기대 때 문예
+                부흥기의 대표적인 화가로 여겨지고 산수화, 풍속화에 큰 비중을 차지한
+                화가이고 대표작은 서당도, 논갈이, 씨름 등이 있다.
+            </p>
+            <h2>정선</h2>
+            <p>
+                정선은 조선의 화가, 문신이다.여행을 즐겨 금강산 등 전국 명승을 찾아다니면
+                서 그림을 그렸는데 현재 심사정과 함께 삼재라고 불렀습니다. 정선의 대표작은
+                인왕제색도가 있습니다.
+            </p>
+            <h2>김정희</h2>
+            <p>
+                김정희는 본관은 경주이고, 자는 원춘이다. 노론북학파 실학자이면서
+                화가, 서예가였다. 한국 금석학의 개조 여겨지며, 한국과 중국의 옛비문
+                을 보고 만든 추사체 있다. 대표작은 불이선란도 등이 있습니다.
+            </p>
+            <h2>신사임당</h2>
+            <p>
+                조선 시대 중기의 문인이자 유학자, 화가, 시인이다. 율곡 이이, 화가 이매
+                창의 어머니이다. 대표작은 산수도 초충도 등이 있습니다.
+            </p>
+            </div>
+            <div class="pa">
+                <h6>한국인이 찾는 한국 화가</h6>
+                <p><a href="#">한국 화가</a></p>
+                <a href="#">화가가 살던 시대</a>
+                <a href="#">화가 그림의 활용</a>
+            </div>
         </div>
         <div id="footer">
-            Copyright C Allright Reserved
+            @korea artist intro. Copyright C Allright Reserved
         </div>
     
 </body>
