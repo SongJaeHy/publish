@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<style>
+    body{font:12px "굴림", Gulim; width: 550px;}
+  #body{ border:2px solid pink;
+            height: 300px; }
+    *{
+        margin: 0; padding: 0;
+    }
+    #footer{ clear: both; border:2px solid purple; background-color: green;
+            color: white;
+            height: 100px; }
+    #header{border: 2px solid pink; height: 100px;
+    background-color: blueviolet;}
+    #body > div{display: inline-block;}
+    .contant{float:left; width:100px; 
+        height:300px; border:1px solid gray;
+        text-align: center; background-color: gray; line-height: 30px;
+        display: inline}
+    .con{float: left; width: 340px; border: 1px solid blue; height: 300px;}
+    .pa{float: center; border:1px solid gray; 
+    width:100px; height: 300px; display: inline;}
+</style>
+<script>
+</script>
+<meta charser="UTF-8">
+<title></title>
+</head>
+<body>
+   
+        <div id="header">
+            헤더
+        </div>
+        <div id="body">
+            <div class="contant">사이드
+                <ul>
+                    <a href="#">그림의 작가</a><br>
+                    <a href="#">그림의 시대</a><br>
+                    <a href="#">그림의 재료</a><br>
+                    <a href="#">그림의 주인공</a><br>
+                    <a href="#">그림의 활용</a>
+                </ul>
+            </div>
+            <div class="con">가운데</div>
+            <div class="pa">오른쪽</div>
+        </div>
+        <div id="footer">
+            Copyright C Allright Reserved
+        </div>
+    
+</body>
+</html>
